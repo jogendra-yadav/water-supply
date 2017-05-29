@@ -24,9 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   | a PHP script and you can easily do that on your own.
   |
  */
-$config['base_url'] = '';
+
 if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == "localhost") {
     $config['base_url'] = 'http://localhost/water-supply';
+}else{
+    $config['base_url'] = 'http://54.245.195.212/water-supply';
 }
 
 /*
