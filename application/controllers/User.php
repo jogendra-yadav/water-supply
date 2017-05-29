@@ -44,6 +44,7 @@ class User extends MY_Controller {
                 'is_admin' => $this->input->post('user_type'),
                 'password' => md5($this->input->post('password')),
                 'address' => $this->input->post('address'),
+                'register_date' => date('Y-m-d H:i:s')
             );
             $this->user_model->save_user($insert_data);
             redirect('user.html');
