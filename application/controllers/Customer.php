@@ -70,6 +70,7 @@ class Customer extends MY_Controller {
                 'last_name' => $this->input->post('last_name'),
                 'mobile' => $this->input->post('mobile'),
                 'address' => $this->input->post('address'),
+                'register_date' => date('Y-m-d H:i:s')
             );
             $this->customer_model->save_customer($insert_data);
             redirect('customer.html');
