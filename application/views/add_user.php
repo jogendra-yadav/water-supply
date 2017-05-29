@@ -47,15 +47,35 @@ $this->load->view('navbar');
                             <div class="col-lg-4"><input type="text" name="last_name" placeholder="Last Name" value="" class="form-control"></div>
                         </div>
                         <div class="form-group">
-                            <label class="col-lg-2 control-label">Address</label>
+                            <label class="col-lg-2 control-label">Username</label>
+                            <div class="col-lg-4"><input type="text" name="username" value="" placeholder="Username" class="form-control"></div>
+                            <label class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-4"><input type="text" name="email" value="" placeholder="email" class="form-control"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-4"><input type="password" name="password" value="" placeholder="Password" class="form-control"></div>
+                            <label class="col-lg-2 control-label">Retype Password</label>
+                            <div class="col-lg-4"><input type="password" name="confirm_password" value="" placeholder="Confirm password" class="form-control"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">User Type</label>
                             <div class="col-lg-4">
-                                <textarea placeholder="Address" name="address" class="form-control"></textarea>
+                                <select name="user_type" class="form-control">
+                                    <option value="">--Select user type--</option>
+                                    <option value="1">Admin</option>
+                                    <option value="0">Distributor</option>
+                                </select>
                             </div>
                             <label class="col-lg-2 control-label">Mobile</label>
                             <div class="col-lg-4"><input type="text" name="mobile" value="" placeholder="Mobile" class="form-control"></div>
                         </div>
                         <div class="form-group">
-                            <div class="col-lg-12">
+                            <label class="col-lg-2 control-label">Address</label>
+                            <div class="col-lg-4">
+                                <textarea placeholder="Address" name="address" class="form-control"></textarea>
+                            </div>
+                            <div class="col-lg-6">
                                 <button class="btn btn-sm btn-primary pull-right" type="submit">Save Details</button>
                             </div>
                         </div>
