@@ -25,6 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   |
  */
 
+date_default_timezone_set('Asia/Kolkata');
+
 if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == "localhost") {
     $config['base_url'] = 'http://localhost/water-supply';
 }else{
