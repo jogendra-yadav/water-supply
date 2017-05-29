@@ -30,3 +30,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 /nbproject/
 /user_guide/
+application/config/database.php
