@@ -31,6 +31,8 @@ if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == "localhost") {
     $config['base_url'] = 'http://54.245.195.212/water-supply';
 }
 
+date_default_timezone_set('Asia/Kolkata');
+
 /*
   |--------------------------------------------------------------------------
   | Index File
