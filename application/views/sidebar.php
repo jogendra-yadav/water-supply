@@ -18,6 +18,9 @@
                 <a href="<?php echo site_url('home.html'); ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
             </li>
             <li class="<?php echo ($this->router->fetch_class() == 'customer') ? 'active' : '' ?>">
+                <a href="<?php echo site_url('user.html'); ?>"><i class="fa fa-user"></i> <span class="nav-label">User</span></a>
+            </li>
+            <li class="<?php echo ($this->router->fetch_class() == 'customer') ? 'active' : '' ?>">
                 <a href="<?php echo site_url('customer.html'); ?>"><i class="fa fa-users"></i> <span class="nav-label">Customers</span></a>
             </li>
             <li class="<?php echo ($this->router->fetch_class() == 'delivery') ? 'active' : '' ?>">

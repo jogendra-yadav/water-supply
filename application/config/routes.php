@@ -57,6 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login.html'] = 'login/process_login_action';
 $route['logout.html'] = 'login/logout';
 $route['home.html'] = 'home/index';
+$route['user.html'] = 'user/index';
 $route['customer.html'] = 'customer/index';
 $route['add_customer.html'] = 'customer/add_customer';
 $route['save_customer.html'] = 'customer/save_customer';
