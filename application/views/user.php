@@ -32,7 +32,7 @@ $this->load->view('navbar');
                                     <tr>
                                         <td><?php echo $user->first_name . " " . $user->last_name; ?></td>
                                         <td><?php echo ($user->address) ? $user->address : '-'; ?></td>
-                                        <td><?php echo $user->phone; ?></td>
+                                        <td><?php echo $user->mobile; ?></td>
                                         <td><?php echo ($user->is_admin) ? "Admin" : "Distributor"; ?></td>
                                         <td><?php echo date('d-F-Y @ h:i A', strtotime($user->register_date)); ?></td>
                                         <td>Action</td>

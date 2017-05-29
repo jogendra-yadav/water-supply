@@ -16,4 +16,8 @@ class User_model extends CI_Model {
                         ->result();
     }
 
+    public function save_user($insert_data) {
+        return $this->db->insert('user', $insert_data);
+    }
+
 }
