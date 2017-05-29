@@ -10,6 +10,6 @@ class User extends MY_Controller {
     }
     
     public function index(){
-        echo "Yes";
+        echo "Yes it's fine";
     }
 }
