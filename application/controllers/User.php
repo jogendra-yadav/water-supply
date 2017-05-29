@@ -10,6 +10,6 @@ class User extends MY_Controller {
     }
     
     public function index(){
-        echo "Yes it's fine";
+        $this->load->view('user');
     }
 }
