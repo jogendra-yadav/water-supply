@@ -20,6 +20,7 @@ $this->load->view('navbar');
                                     <th>Name</th>
                                     <th>Address</th>
                                     <th>Mobile</th>
+                                    <th>Type</th>
                                     <th>Creation Date</th>
                                     <th>Action</th>
                                 </tr>
@@ -32,6 +33,7 @@ $this->load->view('navbar');
                                         <td><?php echo $user->first_name . " " . $user->last_name; ?></td>
                                         <td><?php echo ($user->address) ? $user->address : '-'; ?></td>
                                         <td><?php echo $user->phone; ?></td>
+                                        <td><?php echo ($user->is_admin) ? "Admin" : "Distributor"; ?></td>
                                         <td><?php echo date('d-F-Y @ h:i A', strtotime($user->register_date)); ?></td>
                                         <td>Action</td>
                                     </tr>
@@ -44,6 +46,7 @@ $this->load->view('navbar');
                                     <th>Name</th>
                                     <th>Address</th>
                                     <th>Mobile</th>
+                                    <th>Type</th>
                                     <th>Creation Date</th>
                                     <th>Action</th>
                                 </tr>
