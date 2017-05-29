@@ -11,7 +11,10 @@ class Login extends CI_Controller {
 
     public function index() {
         if (isset($_SESSION['logged_in'])) {
-            redirect('home.html');
+
+            $redirect_url = ($_SESSION['is_admin']) ? "home.html" : "delivery.html";
+
+            redirect($redirect_url);
         } else {
             $this->load->view('login');
         }
@@ -40,7 +43,9 @@ class Login extends CI_Controller {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['is_admin'] = $user_check_response->is_admin;
 
-                redirect('home.html');
+                $redirect_url = ($user_check_response->is_admin) ? "home.html" : "delivery.html";
+
+                redirect($redirect_url);
             } else {
                 $this->session->set_flashdata('login_error', 'Username or password invalid');
                 $this->index();

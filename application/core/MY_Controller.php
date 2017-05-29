@@ -9,6 +9,10 @@ class MY_Controller extends CI_Controller {
 
         if (!isset($_SESSION['logged_in'])) {
             redirect('/');
+        } else {
+            if ($_SESSION['is_admin'] == 0 && $this->router->fetch_class() != 'delivery') {
+                redirect('delivery.html');
+            }
         }
     }
 
