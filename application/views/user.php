@@ -25,7 +25,19 @@ $this->load->view('navbar');
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                <?php
+                                foreach ($users as $user) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $user->first_name . " " . $user->last_name; ?></td>
+                                        <td><?php echo ($user->address) ? $user->address : '-'; ?></td>
+                                        <td><?php echo $user->phone; ?></td>
+                                        <td><?php echo date('d-F-Y @ h:i A', strtotime($user->register_date)); ?></td>
+                                        <td>Action</td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
                             </tbody>
                             <tfoot>
                                 <tr>

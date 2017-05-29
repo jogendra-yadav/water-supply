@@ -9,4 +9,11 @@ class User_model extends CI_Model {
         parent::__construct();
     }
 
+    public function get_all_user_list() {
+        return $this->db->select('*')
+                        ->from('user')
+                        ->get()
+                        ->result();
+    }
+
 }

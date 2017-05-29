@@ -8,8 +8,10 @@ class User extends MY_Controller {
         parent::__construct();
         $this->load->model('user_model');
     }
-    
-    public function index(){
-        $this->load->view('user');
+
+    public function index() {
+        $data['users'] = $this->user_model->get_all_user_list();
+        $this->load->view('user', $data);
     }
+
 }
